@@ -1,0 +1,3 @@
+﻿  main.c
+G:\C语言\10_31_debug\10_31_debug\main.c(209,8): warning C4090: “初始化”: 不同的“const”限定符
+  10_31_debug.vcxproj -> G:\C语言\10_31_debug\Debug\10_31_debug.exe
