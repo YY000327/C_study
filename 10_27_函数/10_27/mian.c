@@ -157,7 +157,7 @@
 //	int i = 0;
 //	int count = 0;
 //	for (i = 100; i < 200; i++) {
-//		//判断i是否为素数
+//		判断i是否为素数
 //		if (is_prime(i)) {
 //			printf("%d ", i);
 //			count++; 
@@ -447,8 +447,299 @@
 //	printf("%d", ret);
 //	return 0;
 //}
+
+
+//void if_leapyear(int year) {
+//
+//	if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+//		printf("是闰年");
+//	}
+//	else
+//		printf("不是闰年");
+//}
+//
+//
+//
+//int main() {
+//	int year = 0;
+//	scanf("%d", &year);
+//
+//	if_leapyear(year);
+//
+//	return 0;
+//}
+
+
+
+
+
+
+
+//
+//// 方法一
+//void my_switch(int* a, int* b) {
+//	int p = *a;
+//	*a = *b;
+//	*b = p;
+//}
+////方法二
+//void my_switch(int* a, int* b) {
+//	*a = *a ^ *b;
+//	*b = *b ^ *a;
+//	*a = *a ^ *b;
+//
+//}
+//
+//// 方法三
+//void my_switch(int* a, int* b) {
+//	*a = *a + *b;
+//	*b = *a - *b;
+//	*a = *a - *b;
+//
+//}
+//
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//	scanf("%d %d", &a, &b);
+//
+//	my_switch(&a,&b);
+//	printf("%d %d", a, b);
+//
+//	return 0;
+//
+//}
+
+
+
+//void print_mul(int n) {
+//	int i = 0;
+//	for (i = 1; i <= n; i++) {
+//		int j = 0;
+//		for (j = 1; j <= i; j++) {
+//			printf("%.2d*%.2d = %.2d ", i, j, i * j);
+//		}
+//		printf("\n");
+//	}
+//
+//}
+//
+//
+//int main() {
+//
+//	int n = 0;
+//	scanf("%d", &n);
+//
+//	print_mul(n);
+//
+//	return 0;
+//}
+////
+//
+// 
+// 
+//  2*Fun(2+1);
+//		2*Fun(3+1);
+//			2*Fun(4+1);
+//				2
 //
 
 
+//void print_unit(int n) {
+//	if (n) {
+//		
+//		print_unit(n / 10);
+//		printf("%d ", n % 10);
+//
+//	}
+//	else
+//		return 0;
+//}
+//
+//
+//int main() {
+//
+//	int n = 0;
+//
+//	scanf("%d", &n);
+//
+//	print_unit(n);
+//
+//	return 0;
+//}
+
+
+//int mul(int n) {
+//	if (n)
+//		return n * mul(n - 1);
+//	else
+//		return 1;
+//
+//}
+//
+//
+//
+//int main() {
+//
+//	int n = 0;
+//
+//	scanf("%d", &n);
+//
+//	int ret = mul(n);
+//
+//	printf("%d", ret);
+//	return 0;
+//}
+
+
+
+//
+//int my_strlen(char* arr) {
+//
+//
+//	if (*arr)
+//		return 1 + my_strlen(++arr);
+//	else
+//		return 0;
+//}
+//
+//int my_strlen(char* arr) {
+//	int i = 0;
+//	char* p = arr;
+//	while (*p) {
+//		p++;
+//		i++;
+//	}
+//	return i;
+//
+//	
+//}
+//
+//
+//
+//int main() {
+//
+//	char arr[] = "abcdefg";
+//	
+//	int ret = my_strlen(arr);
+//
+//	printf("%d\n", ret);
+//	return 0;
+//}
+
+
+
+//void reverse_string(char string[]) {
+//	int len = my_strlen(string);
+//	int left = 0;
+//	int right = len - 1;	
+//	if (len > 1) {
+//		char tmp = 0;
+//		tmp = string[left];
+//		string[left] = string[right];
+//		string[right] = '\0';
+//		reverse_string(string+1);
+//		string[right] = tmp;
+//	}
+//
+//}
+////先将第一个数字拿出来放进tmp里面
+////然后将最后一个数字拿出来放到了第一个数字内
+////这个时候在tmp中是第一个数
+////将最后一个数变成\0，保证下一次算长度的时候能得到改变后的长度
+////再将地址指针+1
+////然后再进递归，然后整个函数暂停，进入下一个函数
+////递归到len<1的时候，代表只剩下一个数，代表递归结束
+////此时string{right]=tmp开始奏效，从最近的开始往里填，依次往前填
+//
+//int my_strlen(char* arr) {
+//
+//
+//	if (*arr)
+//		return 1 + my_strlen(++arr);
+//	else
+//		return 0;
+//}
+//
+//int main() {
+//
+//	char arr[] = "abcdef";
+//
+//	reverse_string(arr);
+//
+//	printf("%s\n", arr);
+//
+//	return 0;
+//}
+
+
+ //a b c d e f g \0
+ //g b c d e f \0 \0 
+ //a
+ //g f c d e \0 \0 \0
+ //b
+ //g f e d \0 \0 \0 \0
+ //c
+ //g f e d c \0 \0 \0
+ //g f e d c  b \0 \0
+ //g f e d c b a  \0
+ //*p+sz = f
+
+
+//int DigitSum(int n) {
+//	
+//	if (n) {
+//		int a = n % 10;
+//		return (a + DigitSum(n / 10));
+//
+//	}
+//	else
+//		return 0;
+//
+//}
+////第一步将变量n输入后进入判断，如果n等于0，直接得到0
+////第二步将变量n模10，得到需要的个位数
+////第三步将变量除以10，然后进入新的函数，然后进入递归
+////
+//
+//
+//
+//int main() {
+//
+//	int n;
+//	scanf("%d", &n);
+//	int ret = DigitSum(n);
+//
+//	printf("%d\n", ret);
+//	
+//
+//	return 0;
+//}
+//
+// 
+// 
+//unsigned int Power(int n, int k) {
+//	if (k) {
+//		k--;
+//		return n * Power(n, k);
+//	}
+//	else
+//		return 1;
+//	
+//}
+//
+//int main() {
+//	int n = 0;
+//	int k = 0;
+//	scanf("%d %d", &n, &k);
+//
+//	int ret = Power(n, k);
+//	printf("%u\n", ret);
+//
+//	return 0;
+//
+// }
+//
 
 
