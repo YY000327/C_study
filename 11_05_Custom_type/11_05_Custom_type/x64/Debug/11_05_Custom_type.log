@@ -1,0 +1,6 @@
+﻿  mian.c
+G:\C语言\11_05_Custom_type\11_05_Custom_type\mian.c(310,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+G:\C语言\11_05_Custom_type\11_05_Custom_type\mian.c(310,9): message : 请考虑在格式字符串中使用“%zd”
+G:\C语言\11_05_Custom_type\11_05_Custom_type\mian.c(311,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+G:\C语言\11_05_Custom_type\11_05_Custom_type\mian.c(311,9): message : 请考虑在格式字符串中使用“%zd”
+  11_05_Custom_type.vcxproj -> G:\C语言\11_05_Custom_type\x64\Debug\11_05_Custom_type.exe
