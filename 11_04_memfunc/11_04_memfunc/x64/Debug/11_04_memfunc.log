@@ -1,0 +1,3 @@
+﻿  main.c
+G:\C语言\11_04_memfunc\11_04_memfunc\main.c(247,12): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  11_04_memfunc.vcxproj -> G:\C语言\11_04_memfunc\x64\Debug\11_04_memfunc.exe
