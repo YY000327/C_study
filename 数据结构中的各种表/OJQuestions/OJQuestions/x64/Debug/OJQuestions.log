@@ -1,0 +1,3 @@
+﻿  test.c
+G:\C语言\数据结构中的各种表\OJQuestions\OJQuestions\test.c(452): warning C4716: “myQueuePeek”: 必须返回一个值
+  OJQuestions.vcxproj -> G:\C语言\数据结构中的各种表\OJQuestions\x64\Debug\OJQuestions.exe
