@@ -1,0 +1,3 @@
+﻿  test.c
+G:\C语言\11_22_Heap\11_22_Heap\test.c(157,8): warning C4244: “函数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  11_22_Heap.vcxproj -> G:\C语言\11_22_Heap\x64\Debug\11_22_Heap.exe
