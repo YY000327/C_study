@@ -1,0 +1,4 @@
+﻿  test.c
+G:\C语言\11_23_Binary_tree\11_23_Binary_tree\test.c(270,63): warning C4244: “return”: 从“double”转换到“int”，可能丢失数据
+G:\C语言\11_23_Binary_tree\11_23_Binary_tree\test.c(328,13): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  11_23_Binary_tree.vcxproj -> G:\C语言\11_23_Binary_tree\x64\Debug\11_23_Binary_tree.exe
