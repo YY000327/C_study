@@ -1,0 +1,11 @@
+﻿  Sort.c
+G:\C语言\11_25_sort\11_25_sort\Sort.c(19,23): warning C4018: “<”: 有符号/无符号不匹配
+G:\C语言\11_25_sort\11_25_sort\Sort.c(123,23): warning C4018: “<”: 有符号/无符号不匹配
+  Test.c
+G:\C语言\11_25_sort\11_25_sort\Test.c(40,8): warning C4244: “函数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  正在生成代码
+  7 of 13 functions (53.8%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  11_25_sort.vcxproj -> G:\C语言\11_25_sort\Release\11_25_sort.exe

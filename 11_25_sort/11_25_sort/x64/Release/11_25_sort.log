@@ -1,0 +1,9 @@
+﻿  Sort.c
+G:\C语言\11_25_sort\11_25_sort\Sort.c(20,13): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  Test.c
+G:\C语言\11_25_sort\11_25_sort\Test.c(34,8): warning C4244: “函数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  正在生成代码
+  Previous IPDB not found, fall back to full compilation.
+  All 10 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  11_25_sort.vcxproj -> G:\C语言\11_25_sort\x64\Release\11_25_sort.exe
