@@ -1,0 +1,3 @@
+﻿  Test.c
+G:\C语言\11_25_sort\11_25_sort\Test.c(65,8): warning C4244: “函数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  11_25_sort.vcxproj -> G:\C语言\11_25_sort\Debug\11_25_sort.exe
