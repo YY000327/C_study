@@ -1,0 +1,7 @@
+﻿  Test.cpp
+G:\C语言\12-03_template\12-03_template\Test.cpp(173,22): warning C4244: “参数”: 从“double”转换到“T”，可能丢失数据
+          with
+          [
+              T=int
+          ]
+  12-03_template.vcxproj -> G:\C语言\12-03_template\x64\Debug\12-03_template.exe
