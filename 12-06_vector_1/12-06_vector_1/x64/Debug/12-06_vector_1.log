@@ -1,0 +1,7 @@
+﻿  test.cpp
+G:\C语言\12-06_vector_1\12-06_vector_1\test.cpp(122,15): warning C4267: “参数”: 从“size_t”转换到“_Ty”，可能丢失数据
+          with
+          [
+              _Ty=int
+          ]
+  12-06_vector_1.vcxproj -> G:\C语言\12-06_vector_1\x64\Debug\12-06_vector_1.exe
